@@ -95,6 +95,11 @@ The Calculator Web Application is a practical and interactive tool designed for 
 
 6. **Visual Effects**: Buttons have dynamic styles such as color changes on hover and active states to enhance user interaction. The visual feedback helps users understand their actions and improve the overall usability of the calculator.
 
+## Outcome
+
+![image](https://github.com/user-attachments/assets/730d3a15-cbd1-4610-a45b-b13514c24ea3)
+
+
 
 ## Summary
 
