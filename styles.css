@@ -1,0 +1,130 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif; /* Set a fallback font */
+    background-image: url(hello.avif);
+    background-position: 100%;
+    background-size: cover;  /* Example background color */
+    margin: 0;
+    padding: 20px; /* Add padding to create space around the content */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align horizontally */
+    height: 100vh; /* Set full viewport height */
+    overflow: hidden; /* Hide overflow content */
+}
+
+.calculator-heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    color: red;
+    text-align: center; /* Center align the heading */
+    margin-top: 20px; /* Top margin */
+    margin-bottom: 20px; /* Bottom margin */
+    text-shadow: 2px 2px 4px rgba(252, 198, 3, 0.977);
+}
+
+.calculator {
+    background-color: white;
+    padding: 30px;
+    margin-right: 30px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 21%; /* Increased width for a larger calculator */
+    border: 10px solid #000; /* Thick black border */
+}
+
+
+input[type="text"] {
+    width: calc(100% - 15px);
+    padding: 6px;
+    font-size: 50px; /* Larger font size for input field */
+    border: 3px solid black; /* Black border for the display */
+    background-color: #d0d8f8;
+    color: black;
+    margin-bottom: 25px;
+    margin-right: 50px;
+    border-radius: 10px;
+    text-align: right;
+    outline: none; /* Remove outline on focus */
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+button {
+    padding: 15px; /* Increased padding for larger buttons */
+    font-size: 30px; /* Larger font size for button text */
+    border: 3px solid red;
+    border-radius: 10px;
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s, transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background-color: red;
+    border-color:#1905f2;
+}
+
+button:active {
+    animation: blink 0.2s linear; /* Blink animation on active state */
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.clear, .operator, .equal {
+    background-color: #ff9500;
+    color: black;
+}
+
+.clear:hover, .operator:hover, .equal:hover {
+    background-color: #ffae42;
+}
+
+.operator {
+    background-color: #f709bb;
+}
+
+.operator:hover {
+    background-color: red;
+}
+
+.equal {
+    background-color: cyan;
+}
+
+.equal:hover {
+    background-color: red;
+}
+
+.clear {
+    background-color: #0af130;
+}
+
+.clear:hover {
+    background-color: red;
+}
+
+@keyframes blink {
+    0% {
+        background-color: orange;
+    }
+    50% {
+        background-color: orange;
+    }
+    100% {
+        background-color: orange;
+    }
+}
