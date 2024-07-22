@@ -1,4 +1,4 @@
-# Calculator 
+# CALCULATOR 
 
 ## Overview
 
@@ -64,24 +64,36 @@ The Calculator Web Application is a practical and interactive tool designed for 
 - **Purpose**: Handles user interactions, performs calculations, and updates the display.
 - **Key Features**: Event handling for button clicks, calculation logic using `eval()`, and error handling.
 
-## How to Use
+## Working
 
-### Input Numbers and Operators
-1. **Click Buttons**: Select numbers and arithmetic operators by clicking the respective buttons on the calculator.
+### User Interface
 
-### Perform Calculations
-2. **Calculate Result**: Press the `=` button to evaluate the current arithmetic expression and display the result.
+1. **Layout**: The calculator interface is designed with HTML and CSS, featuring an input field for displaying calculations and results, and a grid of buttons for user interaction. The buttons include numbers, arithmetic operators, a decimal point, and functional buttons like clear and equal.
 
-### Clear Display
-3. **Reset Calculator**: Click the `C` button to clear the display and reset the calculator for a new calculation.
+### Input Handling
 
-## Uses
+2. **Button Interactions**: Each button has an event listener attached via JavaScript. When a button is clicked, the corresponding value (number, operator, or function) is processed based on its type:
+   - **Number and Decimal Buttons**: Append the clicked value to the input field, allowing users to build their arithmetic expression.
+   - **Operator Buttons**: Add arithmetic operators (`+`, `-`, `*`, `/`) to the input field, enabling users to perform calculations.
+   - **Clear Button (C)**: Resets the input field to `0`, clearing any current input or result.
 
-- **Basic Arithmetic**: Quickly perform fundamental calculations such as addition, subtraction, multiplication, and division.
-- **Decimal Calculations**: Handle calculations involving decimal numbers for precise results.
-- **User Interaction**: Easily input numbers and operators, and clear the display with simple button clicks.
-- **Responsive Design**: Accessible on various devices including desktops, tablets, and smartphones, adapting to different screen sizes.
-- **Interactive Experience**: Enjoy a dynamic interface with vibrant button colors and visual feedback on interactions.
+### Calculation
+
+3. **Expression Evaluation**: 
+   - **Equal Button (=)**: When clicked, the JavaScript code evaluates the expression entered in the input field using the `eval()` function. It computes the result of the arithmetic expression.
+   - **Error Handling**: If the expression is invalid (e.g., division by zero or malformed input), the application displays an 'Error' message in the input field.
+
+### Display Updates
+
+4. **Result Display**: After evaluation, the result or error message is displayed in the input field. The user can then start a new calculation by inputting further numbers and operators.
+
+### Responsive Design
+
+5. **Adaptation**: The design ensures that the calculator is usable across various devices by adapting its layout and size based on screen dimensions, providing a consistent user experience on desktops, tablets, and smartphones.
+
+### Interactive Feedback
+
+6. **Visual Effects**: Buttons have dynamic styles such as color changes on hover and active states to enhance user interaction. The visual feedback helps users understand their actions and improve the overall usability of the calculator.
 
 
 ## Summary
